@@ -1,21 +1,42 @@
+html {
+	box-sizing: border-box;
+}
+
 /* variables */
 :root {
     /* font family */
+    --headings: "Oswald", sans-serif;
+    --body-text: "Source Sans", sans-serif;
+
     /* font size */
     /* line-height */
     /* font-weight */
     /* color */
+    --white: white;
+    --black: black;
+    --light-green: #77cc66;
+    --dark-green: #50b975;
+    --light-blue: #1581a2;
+    --dark-blue: #17678c;
+    --aurora: linear-gradient(180deg, rgba(119,204,102,1) 19%, rgba(80,185,117,1) 38%, rgba(21,129,162,1) 68%, rgba(23,103,140,1) 94%);
+
+    
     /* spacings */
 }
 
 /* global styles */
+.block {
+    display: block;
+}
+.hidden {
+    display: none;
+}
 /* backgrounds */
 .black-background {
     background-color: black;
 }
 .green-blue-background {
-    background: rgb(119,204,102);
-    background: linear-gradient(180deg, rgba(119,204,102,1) 19%, rgba(80,185,117,1) 38%, rgba(21,129,162,1) 68%, rgba(23,103,140,1) 94%);
+    background: var(--aurora);
 }
 .white-background {
     background-color: white;
@@ -25,11 +46,40 @@
 } */
 
 /* text global styles */
-h1 {
+h1, h2, h3 {
     color: white;
+    font-family: var(--headings);
 }
 h2 {
-    color: 
+
+}
+p {
+    color: var(--white);
+    font-family: var(--body-text);
+}
+li {
+    color: var(--white);
+    font-family: var(--body-text); 
+    list-style: none;
+}
+/* styles by section */
+.white-background h2, .white-background p {
+    color: var(--black);
 }
 
-/* styles by section */
+/* contact form */
+.form {
+    padding-top: 50px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.contact-form input, .contact-form textarea {
+    width: 70%;
+    max-width: 500px;
+}
