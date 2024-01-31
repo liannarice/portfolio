@@ -49,6 +49,7 @@ html {
 h1, h2, h3 {
     color: white;
     font-family: var(--headings);
+    margin: 0px;
 }
 p {
     color: var(--white);
@@ -66,7 +67,7 @@ li {
 
 /* contact form */
 .form {
-    padding-top: 50px;
+    padding-top: 15px;
 }
 .contact-form {
     display: flex;
