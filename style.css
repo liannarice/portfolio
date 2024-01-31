@@ -50,9 +50,6 @@ h1, h2, h3 {
     color: white;
     font-family: var(--headings);
 }
-h2 {
-
-}
 p {
     color: var(--white);
     font-family: var(--body-text);
