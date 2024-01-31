@@ -1,0 +1,35 @@
+/* variables */
+:root {
+    /* font family */
+    /* font size */
+    /* line-height */
+    /* font-weight */
+    /* color */
+    /* spacings */
+}
+
+/* global styles */
+/* backgrounds */
+.black-background {
+    background-color: black;
+}
+.green-blue-background {
+    background: rgb(119,204,102);
+    background: linear-gradient(180deg, rgba(119,204,102,1) 19%, rgba(80,185,117,1) 38%, rgba(21,129,162,1) 68%, rgba(23,103,140,1) 94%);
+}
+.white-background {
+    background-color: white;
+}
+/* header {
+    background: url();
+} */
+
+/* text global styles */
+h1 {
+    color: white;
+}
+h2 {
+    color: 
+}
+
+/* styles by section */
