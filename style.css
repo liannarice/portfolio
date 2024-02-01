@@ -33,6 +33,7 @@ html {
 }
 .wrapper {
     width: 90%;
+    margin: 0 auto;
 }
 /* backgrounds */
 .black-background {
@@ -107,6 +108,12 @@ figure {
 }
 
 /* skills section */
+.skills-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* contact form */
 .form {
