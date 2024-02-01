@@ -1,140 +1,157 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* variables */
 :root {
-    /* font family */
-    --headings: "Oswald", sans-serif;
-    --body-text: "Source Sans", sans-serif;
+  /* font family */
+  --headings: "Oswald", sans-serif;
+  --body-text: "Source Sans", sans-serif;
 
-    /* font size */
-    /* line-height */
-    /* font-weight */
-    /* color */
-    --white: white;
-    --black: black;
-    --light-green: #77cc66;
-    --dark-green: #50b975;
-    --light-blue: #1581a2;
-    --dark-blue: #17678c;
-    --pinkypurp: #ac3aa9;
-    --aurora: linear-gradient(180deg, rgba(119,204,102,1) 19%, rgba(80,185,117,1) 38%, rgba(21,129,162,1) 68%, rgba(23,103,140,1) 94%);
+  /* font size */
+  /* line-height */
+  /* font-weight */
+  /* color */
+  --white: white;
+  --black: black;
+  --light-green: #77cc66;
+  --dark-green: #50b975;
+  --light-blue: #1581a2;
+  --dark-blue: #17678c;
+  --pinkypurp: #ac3aa9;
+  --aurora: linear-gradient(
+    180deg,
+    rgba(119, 204, 102, 1) 19%,
+    rgba(80, 185, 117, 1) 38%,
+    rgba(21, 129, 162, 1) 68%,
+    rgba(23, 103, 140, 1) 94%
+  );
 
-    /* spacings */
+  /* spacings */
 }
 
 /* global styles */
 .block {
-    display: block;
+  display: block;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 .wrapper {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 /* backgrounds */
 .black-background {
-    background-color: black;
+  background-color: black;
 }
 .green-blue-background {
-    background: var(--aurora);
+  background: var(--aurora);
 }
 .white-background {
-    background-color: white;
+  background-color: white;
 }
 /* header {
     background: url();
 } */
 
 /* text global styles */
-h1, h2, h3 {
-    color: white;
-    font-family: var(--headings);
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
+h1,
+h2,
+h3 {
+  color: white;
+  font-family: var(--headings);
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
 }
 p {
-    color: var(--white);
-    font-family: var(--body-text);
+  color: var(--white);
+  font-family: var(--body-text);
 }
 .caption {
-    color: var(--white);
-    font-family: var(--body-text);
+  color: var(--white);
+  font-family: var(--body-text);
+}
+ul {
+  padding-inline-start: 0px;
 }
 li {
-    color: var(--white);
-    font-family: var(--body-text); 
-    list-style: none;
+  color: var(--white);
+  font-family: var(--body-text);
+  list-style: none;
 }
 /* button styles */
 .button1 {
-    background-color: var(--white);
-    color: var(--dark-blue);
-    border-radius: 10px;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border-radius: 10px;
 }
 .button1:hover {
-    background-color: var(--pinkypurp);
-    color: var(--black);
+  background-color: var(--pinkypurp);
+  color: var(--black);
 }
 /* styles by section */
-.white-background h2, .white-background p {
-    color: var(--black);
+.white-background h2,
+.white-background p {
+  color: var(--black);
 }
 /* nav */
 .top-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10%;
 }
 
 /* about section */
 .about-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about-img {
-    width: 100%;
+  width: 100%;
 }
 figure {
-    max-width: 300px;
-    text-align: center;
+  max-width: 300px;
+  text-align: center;
 }
 
 /* skills section */
 .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.skill h3 {
+  color: var(--black);
 }
 
 /* contact form */
 .form {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.contact-form input, .contact-form textarea {
-    width: 70%;
-    max-width: 500px;
+.contact-form input,
+.contact-form textarea {
+  width: 70%;
+  max-width: 500px;
 }
