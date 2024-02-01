@@ -31,6 +31,9 @@ html {
 .hidden {
     display: none;
 }
+.wrapper {
+    width: 90%;
+}
 /* backgrounds */
 .black-background {
     background-color: black;
@@ -68,19 +71,42 @@ li {
 }
 /* button styles */
 .button1 {
-    background-color: var(--pinkypurp);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--dark-blue);
     border-radius: 10px;
+}
+.button1:hover {
+    background-color: var(--pinkypurp);
+    color: var(--black);
 }
 /* styles by section */
 .white-background h2, .white-background p {
     color: var(--black);
 }
+/* nav */
+.top-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10%;
+}
 
 /* about section */
-.about-img {
-    width: 200px;
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.about-img {
+    width: 100%;
+}
+figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+/* skills section */
 
 /* contact form */
 .form {
