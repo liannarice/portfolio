@@ -18,9 +18,9 @@ html {
     --dark-green: #50b975;
     --light-blue: #1581a2;
     --dark-blue: #17678c;
+    --pinkypurp: #ac3aa9;
     --aurora: linear-gradient(180deg, rgba(119,204,102,1) 19%, rgba(80,185,117,1) 38%, rgba(21,129,162,1) 68%, rgba(23,103,140,1) 94%);
 
-    
     /* spacings */
 }
 
@@ -50,8 +50,14 @@ h1, h2, h3 {
     color: white;
     font-family: var(--headings);
     margin: 0px;
+    padding: 10px;
+    text-align: center;
 }
 p {
+    color: var(--white);
+    font-family: var(--body-text);
+}
+.caption {
     color: var(--white);
     font-family: var(--body-text);
 }
@@ -60,9 +66,20 @@ li {
     font-family: var(--body-text); 
     list-style: none;
 }
+/* button styles */
+.button1 {
+    background-color: var(--pinkypurp);
+    color: var(--white);
+    border-radius: 10px;
+}
 /* styles by section */
 .white-background h2, .white-background p {
     color: var(--black);
+}
+
+/* about section */
+.about-img {
+    width: 200px;
 }
 
 /* contact form */
