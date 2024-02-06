@@ -82,11 +82,22 @@ li {
   font-family: var(--body-text);
   list-style: none;
 }
+/* padding for sections */
+header,
+.green-blue-background,
+.black-background,
+.white-background,
+footer {
+  padding: 20px 0px;
+}
 /* button styles */
 .button1 {
   background-color: var(--white);
   color: var(--dark-blue);
+  font-weight: bold;
   border-radius: 10px;
+  margin: 0 auto;
+  padding: 5px;
 }
 .button1:hover {
   background-color: var(--pinkypurp);
@@ -103,6 +114,15 @@ li {
   flex-direction: row;
   justify-content: end;
   gap: 10%;
+  margin: 0px;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0px;
+}
+a:hover {
+  border-bottom: 2px solid var(--white);
 }
 
 /* about section */
@@ -127,7 +147,7 @@ figure {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 250px;
+  width: 275px;
 }
 .skill {
   display: flex;
@@ -135,7 +155,7 @@ figure {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0 20px;
+  gap: 0 5%;
 }
 .skill h3 {
   color: var(--pinkypurp);
@@ -156,4 +176,31 @@ figure {
 .contact-form textarea {
   width: 70%;
   max-width: 500px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media queries */
+/* tablet and larger */
+@media screen and (min-width: 768px) {
+  .skills {
+    min-width: 490px;
+  }
+}
+/* Tablet Only */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+/* Desktop Only */
+@media screen and (min-width: 1024px) {
+  .skills {
+    min-width: 920px;
+  }
+}
+/* even larger */
+@media screen and (min-width: 1180px) {
 }
