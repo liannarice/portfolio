@@ -64,8 +64,13 @@ h3 {
   color: white;
   font-family: var(--headings);
   margin: 0px;
-  padding: 10px;
   text-align: center;
+}
+h2 {
+  padding: 30px;
+}
+h3 {
+  padding-top: 20px;
 }
 p {
   color: var(--white);
@@ -89,12 +94,13 @@ header,
 .black-background,
 .white-background,
 footer {
-  padding: 20px 0px;
+  padding: 35px 0px;
 }
 /* button styles */
 .button1 {
   background-color: var(--white);
-  color: var(--dark-blue);
+  color: var(--black);
+  font-family: var(--body-text);
   font-weight: bold;
   border-radius: 10px;
   margin: 0 auto;
@@ -102,7 +108,7 @@ footer {
 }
 .button1:hover {
   background-color: var(--pinkypurp);
-  color: var(--black);
+  color: var(--white);
 }
 /* styles by section */
 .white-background h2,
@@ -181,9 +187,6 @@ figure {
 }
 
 /* contact form */
-.form {
-  padding-top: 15px;
-}
 .form-info {
   text-align: center;
 }
@@ -205,6 +208,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* media queries */
