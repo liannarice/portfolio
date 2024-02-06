@@ -184,6 +184,9 @@ figure {
 .form {
   padding-top: 15px;
 }
+.form-info {
+  text-align: center;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
