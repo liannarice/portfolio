@@ -114,6 +114,15 @@ header {
   color: var(--white);
 }
 /* styles by section */
+/* global social svgs */
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+/* global text section */
 .white-background h2,
 .white-background p {
   color: var(--black);
