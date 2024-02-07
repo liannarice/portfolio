@@ -88,10 +88,6 @@ li {
   font-family: var(--body-text);
   list-style: none;
 }
-/* img global styles */
-img {
-  width: 100%;
-}
 /* padding for sections */
 header,
 .green-blue-background,
@@ -191,6 +187,10 @@ figure {
 }
 .skill h3 {
   color: var(--pinkypurp);
+}
+/* project styles */
+.project img {
+  width: 100%;
 }
 
 /* contact form */
