@@ -88,6 +88,10 @@ li {
   font-family: var(--body-text);
   list-style: none;
 }
+/* img global styles */
+img {
+  width: 100%;
+}
 /* padding for sections */
 header,
 .green-blue-background,
@@ -95,6 +99,9 @@ header,
 .white-background,
 footer {
   padding: 35px 0px;
+}
+header {
+  padding-top: 0px !important;
 }
 /* button styles */
 .button1 {
@@ -241,6 +248,11 @@ footer {
   /* skills */
   .skills {
     min-width: 490px;
+  }
+  /* projects */
+  .project {
+    display: flex;
+    flex-direction: row;
   }
 }
 /* Tablet Only */
