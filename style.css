@@ -113,6 +113,9 @@ header {
   background-color: var(--pinkypurp);
   color: var(--white);
 }
+.black-text {
+  color: var(--black);
+}
 /* styles by section */
 /* global social svgs */
 .socials {
