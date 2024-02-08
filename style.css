@@ -135,9 +135,9 @@ header {
   font-family: var(--body-text);
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 11px;
 }
 .button1:hover {
   background-color: var(--pinkypurp);
