@@ -160,6 +160,9 @@ header {
   padding: 10px;
   gap: 10px;
 }
+.social:hover {
+  transform: scale(1.1);
+}
 /* global text section */
 .white-background h2,
 .white-background p {
@@ -231,6 +234,9 @@ figure {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.skill:hover {
+  transform: scale(1.1);
 }
 .skill h3 {
   color: var(--pinkypurp);
