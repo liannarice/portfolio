@@ -137,11 +137,14 @@ header {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  padding: 11px;
+  padding: 5px;
 }
 .button1:hover {
   background-color: var(--pinkypurp);
   color: var(--white);
+}
+.btn-tall {
+  height: 40px;
 }
 .black-text {
   color: var(--black);
@@ -220,6 +223,7 @@ figure {
   justify-content: space-evenly;
   align-items: center;
   width: 275px;
+  gap: 10px;
 }
 .skill {
   display: flex;
@@ -227,7 +231,6 @@ figure {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0 5%;
 }
 .skill h3 {
   color: var(--pinkypurp);
@@ -299,6 +302,7 @@ footer {
   /* skills */
   .skills {
     min-width: 490px;
+    gap: 15px;
   }
   /* projects */
   .project {
