@@ -180,15 +180,18 @@ nav {
 }
 .top-links {
   position: absolute;
-  top: 40px;
-  right: 10px;
+  top: 50px;
+  right: 12px;
   text-align: right;
   padding: 4px;
   display: flex;
   flex-direction: column;
   /* justify-content: end; */
-  gap: 5px;
+  gap: 10px;
   margin: 0px;
+}
+.top-links a {
+  font-size: var(--font21);
 }
 .hide-links {
   display: none;
