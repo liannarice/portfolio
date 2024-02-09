@@ -150,6 +150,9 @@ header {
   color: var(--black);
   background-color: transparent;
 }
+.black-text:hover {
+  color: var(--white);
+}
 /* styles by section */
 /* global social svgs */
 .socials {
@@ -200,6 +203,9 @@ a {
   margin: 0px;
 }
 a:hover {
+  transform: scale(1.1);
+}
+.hover-underline:hover {
   border-bottom: 2px solid var(--white);
 }
 
@@ -236,7 +242,7 @@ figure {
   text-align: center;
 }
 .skill:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .skill h3 {
   color: var(--pinkypurp);
