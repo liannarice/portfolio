@@ -2,24 +2,25 @@
 // create html reference variables for nav
 const topLinks = document.getElementById("top-links");
 const navBtn = document.getElementById("mobile-menu-btn");
-const header = document.getElementById("top");
-const about = document.getElementById("about");
+// const navImg = document.getElementById("mobile-menu-img");
 // when btn is clicked toplinks will appear
 // add event listener to btn make function that makes top links appear
 navBtn.addEventListener("click", function () {
   topLinks.classList.toggle("hide-links");
 });
-// event listener for clicking the link
-topLinks.addEventListener("click", function () {
-  topLinks.classList.add("hide-links");
-});
-// or clicking top
-// header.addEventListener("click", function () {
-//   topLinks.classList.add("hide-links");
-// });
-// or clicking about
-about.addEventListener("click", function () {
-  topLinks.classList.add("hide-links");
+
+// click outside of nav menu or click the toplinks will add class hide-links
+document.addEventListener("click", function (event) {
+  // use ! for not and use if sentences
+  if (
+    !event.target.classList.contains("top-links") &&
+    !event.target.classList.contains("mobile-menu-btn") &&
+    !event.target.classList.contains("mobile-menu-img")
+  )
+    if (!topLinks.classList.contains("hide-links")) {
+      // if those are true/not true! then
+      topLinks.classList.add("hide-links");
+    }
 });
 
 // footer
