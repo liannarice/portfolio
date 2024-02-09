@@ -318,6 +318,10 @@ footer {
   .about-section {
     flex-direction: row;
   }
+  /* .about h2,
+  .projects h2 {
+    translate: 17% 40px;
+  } */
   .about-info {
     width: 70%;
   }
@@ -341,6 +345,10 @@ footer {
   .about-info {
     width: 50%;
   }
+  /* .about h2,
+  .projects h2 {
+    translate: 23% 40px;
+  } */
   /* skills section */
   .skills {
     min-width: 985px;
