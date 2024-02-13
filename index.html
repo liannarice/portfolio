@@ -80,8 +80,9 @@
             <div class="socials">
               <ul class="socials">
                 <li>
-                  <button class="button2">
-                    <a href="#">Read more</a>
+                  <!-- button for modal -->
+                  <button class="button2 modal hidden" id="open-modal">
+                    Read more
                   </button>
                 </li>
                 <li>
@@ -129,6 +130,8 @@
                 <a
                   class="hover-underline"
                   href="https://www.https://thelittlestinuksuk.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Designs by the Littlest Inuksuk</a
                 >
               </figcaption>
@@ -327,6 +330,39 @@
       <a href="#top" class="button1">Back To Top</a>
       <p>Designed and Developed by Lianna Rice 2024</p>
     </footer>
+
+    <!-- Modal -->
+    <section class="modal hidden">
+      <div id="modal-wrapper">
+        <div id="btn-close">
+          <button>
+            <img src="./assets/svg/x.svg" alt="close modal button" />
+          </button>
+        </div>
+        <div>
+          <h2>About Lianna</h2>
+        </div>
+        <div id="modal-content">
+          <div id="modal-scroll">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sed
+              quasi doloribus, aliquam ratione, doloremque expedita ipsa atque
+              accusamus quos placeat. Soluta aliquam quae illo consequatur unde
+              minima ratione et.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              totam quibusdam voluptatibus nemo similique in atque optio ex
+              delectus quasi officiis, incidunt dolorem, temporibus suscipit
+              quis accusantium. Corporis, repellendus officiis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="overlay" class="hidden"></div>
+
+    <!-- JavaScript -->
     <script src="./script.js"></script>
   </body>
 </html>
