@@ -60,6 +60,9 @@ html {
 .hidden {
   display: none;
 }
+.fixed {
+  position: fixed;
+}
 .wrapper {
   width: 90%;
   margin: 0 auto;

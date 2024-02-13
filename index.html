@@ -36,7 +36,7 @@
           <li><a class="hover-underline" href="#projects">Projects</a></li>
           <li><a class="hover-underline" href="#contact">Contact</a></li>
         </ul>
-        <button class="mobile-menu-btn" class="mobile-menu-btn">
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
           <img
             id="hamburger"
             class="mobile-menu-img"
@@ -68,20 +68,20 @@
             <div>
               <h2>About</h2>
               <p>
-                Hello World! I'm Lianna, a Nunatsiavut Beneficiary Inuk
-                originally from Happy Valley-Goose Bay, Labrador, and now
-                residing in St. John's, NL. I'm passionate about merging culture
-                with technology to empower Indigenous peoples, communities, and
-                organizations. I focus on transforming designs into responsive,
-                accessible, and seamless web experiences, striving to make a
-                positive impact through my work.
+                Hello World! I'm Lianna, a Nunatsiavut Inuk originally from
+                Happy Valley-Goose Bay, Labrador, and now residing in St.
+                John's, NL. I'm passionate about merging culture with technology
+                to empower Indigenous peoples, communities, and organizations. I
+                focus on transforming designs into responsive, accessible, and
+                seamless web experiences, striving to make a positive impact
+                through my work.
               </p>
             </div>
             <div class="socials">
               <ul class="socials">
                 <li>
                   <!-- button for modal -->
-                  <button class="button2 modal open-modal">Read more</button>
+                  <button class="button2 open-modal">Read more</button>
                 </li>
                 <li>
                   <button class="button1 social">
@@ -330,7 +330,7 @@
     </footer>
 
     <!-- Modal -->
-    <section class="modal hidden">
+    <section class="hidden" id="modal">
       <div class="modal-wrapper">
         <div class="btn-close">
           <button>
@@ -342,23 +342,13 @@
         </div>
         <div class="modal-content">
           <div class="modal-scroll">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sed
-              quasi doloribus, aliquam ratione, doloremque expedita ipsa atque
-              accusamus quos placeat. Soluta aliquam quae illo consequatur unde
-              minima ratione et.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              totam quibusdam voluptatibus nemo similique in atque optio ex
-              delectus quasi officiis, incidunt dolorem, temporibus suscipit
-              quis accusantium. Corporis, repellendus officiis.
-            </p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
           </div>
         </div>
       </div>
     </section>
-    <div class="overlay hidden"></div>
+    <div id="overlay" class="hidden"></div>
 
     <!-- JavaScript -->
     <script src="./modal.js"></script>
