@@ -346,7 +346,8 @@ footer {
   }
   p,
   a,
-  .button1 {
+  .button1,
+  .button2 {
     font-size: var(--font21);
     line-height: var(--line-height26);
   }
@@ -466,6 +467,7 @@ footer {
   p,
   a,
   .button1,
+  .button2,
   .caption,
   figcaption a {
     font-size: var(--font24);

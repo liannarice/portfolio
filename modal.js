@@ -6,7 +6,6 @@ const overlay = document.querySelectorAll(".overlay");
 const openModalBtn = document.querySelectorAll(".open-modal");
 const closeModalBtn = document.querySelectorAll(".btn-close");
 const body = document.body;
-
 // open modal
 const openModal = function () {
   modal.classList.remove("hidden");
