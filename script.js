@@ -4,7 +4,7 @@ const topLinks = document.getElementById("top-links");
 const navBtn = document.getElementById("mobile-menu-btn");
 // variable for mobile-menu-img
 const hamburger = document.getElementById("hamburger");
-//  for x
+//  for x img
 const x = document.getElementById("x");
 // when btn is clicked toplinks will appear
 // add event listener to btn make function that makes top links appear
