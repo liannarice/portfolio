@@ -2,9 +2,9 @@
 
 // variables for modal, overlay, btn, and btn close
 const modal = document.querySelectorAll(".modal");
-const overlay = document.getElementById("overlay");
-const openModalBtn = document.getElementById("open-modal");
-const closeModalBtn = document.getElementById("btn-close");
+const overlay = document.querySelectorAll(".overlay");
+const openModalBtn = document.querySelectorAll(".open-modal");
+const closeModalBtn = document.querySelectorAll(".btn-close");
 const body = document.body;
 
 // open modal
