@@ -2,11 +2,17 @@
 // create html reference variables for nav
 const topLinks = document.getElementById("top-links");
 const navBtn = document.getElementById("mobile-menu-btn");
-// const navImg = document.getElementById("mobile-menu-img");
+// variable for mobile-menu-img
+const hamburger = document.getElementById("hamburger");
+//  for x
+const x = document.getElementById("x");
 // when btn is clicked toplinks will appear
 // add event listener to btn make function that makes top links appear
 navBtn.addEventListener("click", function () {
   topLinks.classList.toggle("hide-links");
+  // add event listener that will listen for navBtn click- toggle between hamburger mobile-menu-img and x img
+  x.classList.toggle("hidden");
+  hamburger.classList.toggle("hidden");
 });
 
 // click outside of nav menu or click the toplinks will add class hide-links
