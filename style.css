@@ -321,8 +321,31 @@ figure {
   border-radius: 4px;
   padding: 10px;
 }
-
-footer {
+/* footer */
+.api-parent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.api-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.api-text h2 {
+  padding-bottom: 0px;
+}
+.api-frame {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.api-frame button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.footer-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -509,6 +532,20 @@ footer {
   .project-links {
     justify-content: left;
     text-align: left;
+  }
+  /* footer */
+  .api-parent {
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .api-text {
+    width: 30%;
+  }
+  .api-text h2,
+  .api-text p {
+    text-align: right;
   }
 }
 /* even larger */

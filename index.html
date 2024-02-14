@@ -325,8 +325,33 @@
     </main>
     <!-- Footer -->
     <footer class="black-background">
-      <a href="#top" class="button1">Back To Top</a>
-      <p>Designed and Developed by Lianna Rice 2024</p>
+      <!-- API here -->
+      <div class="api-parent wrapper">
+        <!-- text here -->
+        <div class="api-text">
+          <h2>Whose Land <span id="change-text">am I</span> on?</h2>
+          <p>
+            <span id="change-you">I</span> live on the ancestral homelands of
+            the <span id="territory">Beothuk and Mi'kmaw</span>
+          </p>
+        </div>
+        <!-- iframe here -->
+        <div class="api-frame">
+          <iframe
+            src="https://native-land.ca/api/embed/embed.html?maps=territories&position=47.564940,-52.709310"
+            frameborder="0"
+            id="territory-iframe"
+          ></iframe>
+          <button class="button2" id="whose-land-btn">
+            Click here to see whose land you're on!
+          </button>
+        </div>
+      </div>
+      <!-- other footer info -->
+      <div class="footer-info">
+        <a href="#top" class="button1">Back To Top</a>
+        <p>Designed and Developed by Lianna Rice 2024</p>
+      </div>
     </footer>
 
     <!-- Modal -->

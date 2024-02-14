@@ -31,3 +31,36 @@ document.addEventListener("click", function (event) {
 
 // footer
 // API for Whose Land thing
+const whoseLandBtn = document.getElementById("whose-land-btn");
+const changeText = document.getElementById("change-text");
+const changeYou = document.getElementById("change-you");
+const stJohns = "47.564940,-52.709310";
+const territoryIframe = document.getElementById("territory-iframe");
+
+// use fetch to send a request for the
+function getLand() {
+  // getting users geolocation
+  if (navigator.geolocation) {
+    // variable for position
+    const position = navigator.geolocation.getCurrentPosition(showPosition);
+    // variable for url
+    const apiUrl = `https://native-land.ca/api/embed/embed.html?maps=territories&position=${position}`;
+    // change src attribute on iframe
+    territoryIframe.setAttribute("src", apiUrl);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+  fetch(apiUrl).then(function (response) {
+    console.log(apiUrl);
+    return response.json();
+    // create the variables that it will change
+  });
+}
+getLand(stJohns);
+console.log(getLand);
+
+// add event listener to change the change-text and the change-you when btn is clicked
+whoseLandBtn.addEventListener("click", function () {
+  changeText.innerHTML = "are you";
+  changeYou.innerHTML = "You";
+});
