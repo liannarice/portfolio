@@ -346,7 +346,7 @@ footer {
   z-index: 1;
 }
 #modal {
-  width: 90%;
+  width: 80%;
   max-width: 1100px;
   max-height: 90vh;
   margin: 0 auto;
@@ -354,7 +354,7 @@ footer {
   position: fixed;
   left: 0;
   right: 0;
-  top: 2vh;
+  top: 3vh;
   background-color: var(--white);
   color: var(--black);
   border: 1px solid var(--black);
@@ -372,15 +372,22 @@ footer {
   max-height: calc(85vh 300px);
 }
 /* modal text content */
-.modal p {
+#modal p {
   color: var(--black);
 }
-.modal h2 {
+#modal h2 {
   text-align: center;
   color: var(--black);
 }
-.btn-close {
+.btn-close button {
   position: absolute;
+  right: 5px;
+  background-color: var(--black);
+}
+.btn-close img {
+  height: 30px;
+  width: 30px;
+  fill: var(--black);
 }
 /* media queries */
 /* tablet and larger */
