@@ -40,14 +40,19 @@ const territoryIframe = document.getElementById("territory-iframe");
 function getLocation() {
   // getting users geolocation
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(getLand);
+    navigator.geolocation.getCurrentPosition(
+      getLand().then(function (response) {
+        console.log(response);
+      })
+    );
   } else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
 // geolocation is a function built in the browser
 // geoPosition is a new parameter that we are using as a variable
-function getLand(geoPosition) {
+// note: async means asynchronous
+async function getLand(geoPosition) {
   // variable for position
   const lat = geoPosition.coords.latitude;
   const long = geoPosition.coords.longitude;
@@ -60,13 +65,11 @@ function getLand(geoPosition) {
 
   // create variable for fetch url territory name
   const fetchUrl = `https://native-land.ca/api/index.php?maps=territories&position=${lat},${long}`;
-  // use fetch to send a request
-  fetch(fetchUrl).then(function (response) {
-    console.log(response);
-    return response.json();
-  });
+  // use fetch to send a request. await makes it wait for the other things first
+  const response = await fetch(fetchUrl);
+  const data = await response.json();
+  return data;
 }
-
 // add event listener to change the change-text and the change-you when btn is clicked
 whoseLandBtn.addEventListener("click", function () {
   changeText.innerHTML = "are you";
