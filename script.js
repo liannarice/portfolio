@@ -57,13 +57,15 @@ function getLand(geoPosition) {
   // console.log(position);
   // change src attribute on iframe
   territoryIframe.setAttribute("src", apiUrl);
+
+  // create variable for fetch url territory name
+  const fetchUrl = `https://native-land.ca/api/index.php?maps=territories&position=${lat},${long}`;
   // use fetch to send a request
-  // fetch(apiUrl).then(function (response) {
-  //   return response.json();
-  // create the variables that it will change
-  // });
+  fetch(fetchUrl).then(function (response) {
+    console.log(response);
+    return response.json();
+  });
 }
-// getLand(stJohns);
 
 // add event listener to change the change-text and the change-you when btn is clicked
 whoseLandBtn.addEventListener("click", function () {
