@@ -217,9 +217,6 @@ a:hover,
 button:hover {
   transform: scale(1.1);
 }
-#teg-link a {
-  border-bottom: 1px solid var(--white);
-}
 /* about section */
 .about-section {
   display: flex;
@@ -236,6 +233,14 @@ button:hover {
 figure {
   max-width: 300px;
   text-align: center;
+}
+#teg-link {
+  border-bottom: 1px solid var(--white);
+  display: inline-block;
+}
+#teg-link:hover {
+  transform: scale(1.1);
+  background-color: var(--dark-blue);
 }
 .read-more-modal {
   width: fit-content;
@@ -469,9 +474,6 @@ figure {
   }
   .top-link {
     border-bottom: 2px solid var(--white);
-  }
-  #teg-link:hover {
-    transform: scale(1.1);
   }
   /* hiding mobile menu btn */
   .mobile-menu-btn {
