@@ -49,11 +49,10 @@ function getLocation() {
 // geoPosition is a new parameter that we are using as a variable
 function getLand(geoPosition) {
   // variable for position
-  const latitude = geoPosition.coords;
-  // const longitude = geoPosition.coords.longitude;
-  console.log(latitude);
+  const lat = geoPosition.coords.latitude;
+  const long = geoPosition.coords.longitude;
   // variable for url
-  const apiUrl = `https://native-land.ca/api/embed/embed.html?maps=territories&position=${latitude}`;
+  const apiUrl = `https://native-land.ca/api/embed/embed.html?maps=territories&position=${lat},${long}`;
   console.log(apiUrl);
   // console.log(position);
   // change src attribute on iframe
@@ -64,7 +63,7 @@ function getLand(geoPosition) {
   // create the variables that it will change
   // });
 }
-getLand(stJohns);
+// getLand(stJohns);
 
 // add event listener to change the change-text and the change-you when btn is clicked
 whoseLandBtn.addEventListener("click", function () {
