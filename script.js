@@ -37,6 +37,12 @@ const changeYou = document.getElementById("change-you");
 const stJohns = "47.564940,-52.709310";
 const territoryIframe = document.getElementById("territory-iframe");
 
+// add event listener to change the change-text and the change-you when btn is clicked
+whoseLandBtn.addEventListener("click", function () {
+  changeText.innerHTML = "are you";
+  changeYou.innerHTML = "You";
+});
+
 // use fetch to send a request for the
 function getLand() {
   // getting users geolocation
@@ -58,9 +64,3 @@ function getLand() {
 }
 getLand(stJohns);
 console.log(getLand);
-
-// add event listener to change the change-text and the change-you when btn is clicked
-whoseLandBtn.addEventListener("click", function () {
-  changeText.innerHTML = "are you";
-  changeYou.innerHTML = "You";
-});

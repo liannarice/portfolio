@@ -198,6 +198,9 @@ nav {
 .top-links a {
   font-size: var(--font21);
 }
+.top-link:hover {
+  transform: scale(1.1);
+}
 .hide-links {
   display: none;
 }
@@ -214,13 +217,9 @@ a:hover,
 button:hover {
   transform: scale(1.1);
 }
-.top-link {
-  border-bottom: 2px solid var(--white);
+#teg-link a {
+  border-bottom: 1px solid var(--white);
 }
-.top-link:hover {
-  transform: scale(1.1);
-}
-
 /* about section */
 .about-section {
   display: flex;
@@ -466,6 +465,12 @@ figure {
     gap: 40%;
     margin-right: 5px;
     font-weight: var(--font-weight-bold);
+  }
+  .top-link {
+    border-bottom: 2px solid var(--white);
+  }
+  #teg-link:hover {
+    transform: scale(1.1);
   }
   /* hiding mobile menu btn */
   .mobile-menu-btn {
