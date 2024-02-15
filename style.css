@@ -568,7 +568,7 @@ figure {
   .project-img,
   .project-info {
     width: 50%;
-    padding: 10px;
+    padding: var(--spacing10);
   }
   .project h3,
   .project-links {
@@ -613,5 +613,11 @@ figure {
   }
   .top-links a {
     font-size: var(--font28);
+  }
+}
+/* largest media query */
+@media screen and (min-width: 2300px) {
+  .wrapper {
+    width: 65%;
   }
 }
