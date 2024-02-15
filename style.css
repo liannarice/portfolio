@@ -210,13 +210,14 @@ a {
   text-decoration: none;
   margin: 0px;
 }
-a:hover {
+a:hover,
+button:hover {
   transform: scale(1.1);
 }
 .top-link {
   border-bottom: 2px solid var(--white);
 }
-.top-link a:hover {
+.top-link:hover {
   transform: scale(1.1);
 }
 
