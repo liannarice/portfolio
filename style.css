@@ -409,18 +409,20 @@ figure {
   position: relative;
   top: 5px;
 }
-.btn-close button {
+#btn-close button {
   position: absolute;
   right: 0px;
   top: 5px;
   background-color: var(--transparent);
   border: none;
   padding-bottom: 0px;
+  z-index: 5;
 }
-.btn-close img {
+#btn-close img {
   height: 30px;
   width: 30px;
   background-color: var(--black);
+  z-index: 4;
 }
 /* media queries */
 /* tablet and larger */

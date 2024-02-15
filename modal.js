@@ -2,7 +2,7 @@
 
 // variables for open btn, and btn close
 const openModalBtn = document.getElementById("open-modal");
-const closeModalBtn = document.querySelectorAll(".btn-close");
+const closeModalBtn = document.getElementById("btn-close");
 
 // open modal
 const openModal = function () {
@@ -26,10 +26,7 @@ const closeModal = function () {
 };
 
 // event listener for clicking close btn, clicking overlay, or pressing Esc
-
-closeModalBtn.forEach((element) => {
-  element.addEventListener("click", closeModal);
-});
+closeModalBtn.addEventListener("click", closeModal);
 
 overlay.addEventListener("click", closeModal);
 document.addEventListener("keydown", function (e) {
