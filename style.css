@@ -28,8 +28,8 @@ html {
   --font-weight-bold: 700;
 
   /* color */
-  --white: white;
-  --black: black;
+  --white: #f5f5f5;
+  --black: #0e1f3b;
   --light-green: #77cc66;
   --dark-green: #50b975;
   --light-blue: #1581a2;
@@ -66,13 +66,13 @@ html {
 }
 /* backgrounds */
 .black-background {
-  background-color: black;
+  background-color: var(--black);
 }
 .green-blue-background {
   background: var(--aurora);
 }
 .white-background {
-  background-color: white;
+  background-color: var(--white);
 }
 /* header {
     background: url();
@@ -82,7 +82,7 @@ html {
 h1,
 h2,
 h3 {
-  color: white;
+  color: var(--white);
   font-family: var(--headings);
   margin: 0px;
   text-align: center;
@@ -378,9 +378,9 @@ figure {
   left: 0;
   right: 0;
   top: 3vh;
-  background-color: var(--white);
-  color: var(--black);
-  border: 1px solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--white);
   border-radius: 4px;
   z-index: 30;
 }
@@ -396,21 +396,26 @@ figure {
 }
 /* modal text content */
 #modal p {
-  color: var(--black);
+  color: var(--white);
 }
 #modal h2 {
   text-align: center;
-  color: var(--black);
+  color: var(--white);
+  position: relative;
+  top: 5px;
 }
 .btn-close button {
   position: absolute;
-  right: 5px;
-  background-color: var(--black);
+  right: 0px;
+  top: 5px;
+  background-color: var(--transparent);
+  border: none;
+  padding-bottom: 0px;
 }
 .btn-close img {
   height: 30px;
   width: 30px;
-  fill: var(--black);
+  background-color: var(--black);
 }
 /* media queries */
 /* tablet and larger */
