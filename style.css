@@ -86,9 +86,17 @@ html {
 .white-background {
   background-color: var(--white);
 }
-/* header {
-    background: url();
-} */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(./assets/hands-background-img.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  height: 25vh;
+  position: relative;
+}
 
 /* text global styles */
 h1,
@@ -102,7 +110,8 @@ h3 {
 }
 h1 {
   font-size: var(--font28);
-  margin-top: 50px;
+  position: relative;
+  bottom: -20px;
 }
 h2 {
   padding-bottom: 30px;
@@ -485,9 +494,9 @@ figure {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap: 40%;
+    gap: 10%;
     margin-right: 5px;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-regular);
   }
   .top-link {
     border-bottom: 2px solid var(--white);
@@ -594,7 +603,6 @@ figure {
 @media screen and (min-width: 1300px) {
   h1 {
     font-size: var(--font46);
-    margin-top: 150px;
   }
   h2 {
     font-size: var(--font36);
