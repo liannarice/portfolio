@@ -48,11 +48,13 @@ function getLocation() {
         territory.innerHTML = "";
         response.forEach((element, index) => {
           territory.innerHTML += element.properties.Name;
-          // if (index === response.length - 1) {
-          //   territory.innerHTML += ", and ";
-          //    }
           if (response.length > 1) {
-            territory.innerHTML += ", ";
+            if (response.indexOf(element) === response.length - 1) {
+              territory.innerHTML =
+                ", and " + element.properties.Name + territory.innerHTML;
+            } else {
+              territory.innerHTML += ", " + element.properties.Name;
+            }
           }
         });
         // territory.innerHTML = response.properties.Name;
