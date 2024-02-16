@@ -40,11 +40,23 @@ const territoryIframe = document.getElementById("territory-iframe");
 function getLocation() {
   // getting users geolocation
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      getLand().then(function (response) {
+    navigator.geolocation.getCurrentPosition(async function (position) {
+      try {
+        const response = await getLand(position);
+        const territory = document.getElementById("territory");
+        territory.innerHTML = "";
+        response.forEach((element) => {
+          territory.innerHTML += element.properties.Name;
+          if (response.length > 1) {
+            territory.innerHTML += ", ";
+          }
+        });
+        // territory.innerHTML = response.properties.Name;
         console.log(response);
-      })
-    );
+      } catch (error) {
+        console.error(error);
+      }
+    });
   } else {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
@@ -73,6 +85,6 @@ async function getLand(geoPosition) {
 // add event listener to change the change-text and the change-you when btn is clicked
 whoseLandBtn.addEventListener("click", function () {
   changeText.innerHTML = "are you";
-  changeYou.innerHTML = "You";
+  changeYou.innerHTML = "You live on ";
   getLocation();
 });

@@ -93,8 +93,8 @@ header {
   background: url(./assets/hands-background-img.png);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 300px;
-  height: 25vh;
+  background-size: 80%;
+  min-height: 30vh;
   position: relative;
 }
 
@@ -111,7 +111,6 @@ h3 {
 h1 {
   font-size: var(--font28);
   position: relative;
-  bottom: -20px;
 }
 h2 {
   padding-bottom: 30px;
@@ -524,10 +523,19 @@ figure {
     gap: 15px;
   }
 }
+/* media query weird small size */
+@media screen and (min-width: 429px) and (max-width: 768px) {
+  header {
+    min-height: 40vh;
+  }
+}
 /* Tablet Only */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .wrapper {
     width: 85%;
+  }
+  header {
+    min-height: 50vh;
   }
   .skill {
     flex-grow: 0;
@@ -546,6 +554,12 @@ figure {
   /* wrapper */
   .wrapper {
     width: 80%;
+  }
+  header {
+    min-height: 60vh;
+  }
+  .h1 {
+    bottom: -10px;
   }
   /* about section */
   .about-info {
