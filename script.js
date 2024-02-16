@@ -44,9 +44,13 @@ function getLocation() {
       try {
         const response = await getLand(position);
         const territory = document.getElementById("territory");
+        const last = response.pop();
         territory.innerHTML = "";
-        response.forEach((element) => {
+        response.forEach((element, index) => {
           territory.innerHTML += element.properties.Name;
+          // if (index === response.length - 1) {
+          //   territory.innerHTML += ", and ";
+          //    }
           if (response.length > 1) {
             territory.innerHTML += ", ";
           }
